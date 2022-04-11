@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: url('images/app-bg.jpg') center center no-repeat;
+    backdrop-filter: blur(2px);
+    background-size: 100%;
+    height: 100vh;
+}
+
+.keys {
+    display: flex;
+    flex-direction: row;
+}
+
+.key {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Anek Odia', sans-serif;
+    font-size: 72px;
+    color: #ebf52c;
+    border: 4px solid #000;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding-top: 15px;
+    width: 100px;
+    padding-bottom: 0;
+    line-height: 72px;
+}
+
+.key:first-child {
+    margin-left: 0;
+}
+
+.key__name {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.key_played {
+    color: #fff;
+    background: #ebf52c;
+}
+
+.key_played .key__name {
+    color: #fff;
+}
