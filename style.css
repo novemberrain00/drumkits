@@ -13,6 +13,8 @@ body {
 .keys {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .key {
@@ -26,6 +28,7 @@ body {
     margin-left: 20px;
     border-radius: 10px;
     padding-top: 15px;
+    margin-bottom: 20px;
     width: 100px;
     padding-bottom: 0;
     line-height: 72px;
