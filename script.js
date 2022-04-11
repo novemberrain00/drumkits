@@ -1,8 +1,15 @@
 const keys = document.querySelectorAll('.key');
 
 const startPlaying = key => {
-    key.querySelector('audio').play();
-    key.classList.add('key_played');
+    const audio = key.querySelector('audio');
+    if(audio.ended) {
+        audio.play();
+        key.classList.add('key_played');
+    } else {
+        audio.currentTime = 0;
+        audio.pause();
+        audio.play();
+    }
 }
 
 const endPlaying = key => {
