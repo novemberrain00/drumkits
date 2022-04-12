@@ -10,6 +10,7 @@ const startPlaying = (key, e) => {
         audio.play();
         key.classList.add('key_played');
     } else {
+        key.classList.add('key_played');
         audio.currentTime = 0;
         audio.pause();
         audio.play();
