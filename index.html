@@ -11,54 +11,121 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <div class="keys">
-        <div class="key">
-            A
-            <span class="key__name" data-key="65">kick</span>
-            <audio src="sounds/(SDPro)MZKick[Airy].wav"></audio>
+
+    <div class="modal modal_closed" id="metronom">
+        <div class="modal__closer">
+            <span class="modal__closer-part"></span>
+            <span class="modal__closer-part"></span>
         </div>
-        <div class="key">
-            S
-            <span class="key__name" data-key="83">clap</span>
-            <audio src="sounds/(SDPro)MZClap[Apex].wav"></audio>
-        </div>
-        <div class="key">
-            D
-            <span class="key__name" data-key="68">hihat</span>
-            <audio src="sounds/(SDPro)MZHiHat[Ardist].wav"></audio>
-        </div>
-        <div class="key">
-            F
-            <span class="key__name" data-key="70">openhat</span>
-            <audio src="sounds/(SDPro)MZOpenHat[ATL].wav"></audio>
-        </div>
-        <div class="key">
-            G
-            <span class="key__name" data-key="71">boom</span>
-            <audio src="sounds/(SDPro)MZStomp[Seri].wav"></audio>
-        </div>
-        <div class="key">
-            H
-            <span class="key__name" data-key="72">ride</span>
-            <audio src="sounds/(SDPro)MZCrash[Gadget].wav"></audio>
-        </div>
-        <div class="key">
-            J
-            <span class="key__name" data-key="74">snare</span>
-            <audio src="sounds/(SDPro)MZSnare[ATL].wav"></audio>
-        </div>
-        <div class="key">
-            K
-            <span class="key__name" data-key="75">tom</span>
-            <audio src="sounds/YNGKANE!-Dro(Tom).wav"></audio>
-        </div>
-        <div class="key">
-            L
-            <span class="key__name" data-key="76">tink</span>
-            <audio src="sounds/YNGKANE!-Tink(Perc).wav"></audio>
+
+        <div class="metr">
+            <div class="metr__header">
+                <button class="button metr__player" id="metr-play">p</button>
+                <input type="text" class="metr__speed" placeholder="скорость">
+            </div>
+            <div class="metr__parser"></div>
+            <div class="metr__road">
+                <audio src="sounds/(SDPro)MZKick[Airy].wav"></audio>
+                <span class="metr__title">kick</span>
+                <div class="metr__line"></div>
+            </div>
+            <div class="metr__road">
+                <audio src="sounds/(SDPro)MZClap[Apex].wav"></audio>
+                <span class="metr__title">clap</span>
+                <div class="metr__line"></div>
+            </div>
+            <div class="metr__road">
+                <audio src="sounds/(SDPro)MZHiHat[Ardist].wav"></audio>
+                <span class="metr__title">hihat</span>
+                <div class="metr__line"></div>
+            </div>
+            <div class="metr__road">
+                <audio src="sounds/(SDPro)MZOpenHat[ATL].wav"></audio>
+                <span class="metr__title">openhat</span>
+                <div class="metr__line"></div>
+            </div>
+            <div class="metr__road">
+                <audio src="sounds/(SDPro)MZStomp[Seri].wav"></audio>
+                <span class="metr__title">boom</span>
+                <div class="metr__line"></div>
+            </div>
+            <div class="metr__road">
+                <audio src="sounds/(SDPro)MZCrash[Gadget].wav"></audio>
+                <span class="metr__title">ride</span>
+                <div class="metr__line"></div>
+            </div>
+            <div class="metr__road">
+                <audio src="sounds/(SDPro)MZSnare[ATL].wav"></audio>
+                <span class="metr__title">snare</span>
+                <div class="metr__line"></div>
+            </div>
+            <div class="metr__road">
+                <audio src="sounds/YNGKANE!-Dro(Tom).wav"></audio>
+                <span class="metr__title">tom</span>
+                <div class="metr__line"></div>
+            </div>
+            <div class="metr__road">
+                <audio src="sounds/YNGKANE!-Tink(Perc).wav"></audio>
+                <span class="metr__title">tink</span>
+                <div class="metr__line"></div>
+            </div>
         </div>
     </div>
+
+    <header class="header">
+        <button class="button header__button" id="metr-btn">м</button>
+        <button class="button header__button">п</button>
+    </header>
+
+    <main class="main">
+        <div class="keys">
+            <div class="key">
+                A
+                <span class="key__name" data-key="65">kick</span>
+                <audio src="sounds/(SDPro)MZKick[Airy].wav"></audio>
+            </div>
+            <div class="key">
+                S
+                <span class="key__name" data-key="83">clap</span>
+                <audio src="sounds/(SDPro)MZClap[Apex].wav"></audio>
+            </div>
+            <div class="key">
+                D
+                <span class="key__name" data-key="68">hihat</span>
+                <audio src="sounds/(SDPro)MZHiHat[Ardist].wav"></audio>
+            </div>
+            <div class="key">
+                F
+                <span class="key__name" data-key="70">openhat</span>
+                <audio src="sounds/(SDPro)MZOpenHat[ATL].wav"></audio>
+            </div>
+            <div class="key">
+                G
+                <span class="key__name" data-key="71">boom</span>
+                <audio src="sounds/(SDPro)MZStomp[Seri].wav"></audio>
+            </div>
+            <div class="key">
+                H
+                <span class="key__name" data-key="72">ride</span>
+                <audio src="sounds/(SDPro)MZCrash[Gadget].wav"></audio>
+            </div>
+            <div class="key">
+                J
+                <span class="key__name" data-key="74">snare</span>
+                <audio src="sounds/(SDPro)MZSnare[ATL].wav"></audio>
+            </div>
+            <div class="key">
+                K
+                <span class="key__name" data-key="75">tom</span>
+                <audio src="sounds/YNGKANE!-Dro(Tom).wav"></audio>
+            </div>
+            <div class="key">
+                L
+                <span class="key__name" data-key="76">tink</span>
+                <audio src="sounds/YNGKANE!-Tink(Perc).wav"></audio>
+            </div>
+        </div>
+    </main>
 
     <script src="script.js"></script>
 </body>

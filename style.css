@@ -1,13 +1,23 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0;
     padding: 0;
     background: url('images/app-bg.jpg') center center no-repeat;
     backdrop-filter: blur(2px);
     background-size: 100%;
     height: 100vh;
+}
+
+.header {
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+.header__button {
+    margin-right: 10px;
+}
+
+.header__button:last-child {
+    margin: 0;
 }
 
 .keys {
@@ -50,4 +60,113 @@ body {
 
 .key_played .key__name {
     color: #fff;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 3px solid #000;
+    border-radius: 10px;
+}
+
+.button:hover {
+    background: #ebf52c;
+    cursor: pointer;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    border: 4px solid #000;
+    border-radius: 10px;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    width: max-content;
+}
+
+.modal_closed {
+    display: none;
+}
+
+.modal__closer {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 105%;
+    top: -10%;
+}
+
+.modal__closer-part {
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 15px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+
+.modal__closer-part:last-child {
+    margin: 0;
+    transform: rotate(-45deg);
+}
+
+.metr {
+    position: relative;
+    overflow: hidden;
+}
+
+.metr__parser {
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50px;
+    background: #000;
+}
+
+.metr__road {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.metr__road:last-child {
+    margin-bottom: 0;
+}
+
+.metr__title {
+    font-size: 12px;
+    width: 50px;
+    font-family: 'Anek Odia', sans-serif;
+}
+
+.metr__line {
+    display: block;
+    width: 500px;
+    height: 3px;
+    background: #000;
+    margin-left: auto;
+}
+
+.metr__line:hover {
+    cursor: pointer;
+    background: #ebf52c;
+}
+
+.metr__trigger {
+    position: absolute;
+    width: 15px;
+    height: 20px;
+    background: #000;
+}
+
+.metr__trigger:hover {
+    background: #ebf52c;
+    cursor: pointer;
+}
+
+.metr__player {
+    margin-bottom: 10px;
 }
